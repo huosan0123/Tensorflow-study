@@ -10,6 +10,12 @@ This file aims to compare the batch_norm layer's effect.
 Really find something different!
 Run this with mnist_bn0.py
 My code is not clean, but I will keep going!
+STEP=49, loss is 5.37903255939, acc is 0.82360001497 
+STEP=99, loss is 1.79672749698, acc is 0.93960001111 
+[TEST]step=99, || loss=20.4746034718, acc=0.168099994585
+STEP=149, loss is 1.64993903732, acc is 0.95000000596 
+STEP=199, loss is 1.5875512296, acc is 0.954400001764 
+[TEST]step=199, || loss=30.0848628616, acc=0.256899989545
 """
 mnist = input_data.read_data_sets("MNIST_data", one_hot=True)
 
