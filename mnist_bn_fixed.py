@@ -5,6 +5,8 @@ import tensorflow.contrib.layers as tcl
 from tensorflow.examples.tutorials.mnist import input_data
 import sys
 
+# if we use bn which is commented, we will have problem: test acc is very low while train acc is high.
+
 mnist = input_data.read_data_sets("MNIST_data", one_hot=True)
 x = tf.placeholder(dtype=tf.float32, shape=[None, 784])
 y = tf.placeholder(dtype=tf.float32, shape=[None, 10])
