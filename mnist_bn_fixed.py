@@ -6,6 +6,9 @@ from tensorflow.examples.tutorials.mnist import input_data
 import sys
 
 # if we use bn which is commented, we will have problem: test acc is very low while train acc is high.
+# I find evidence from tensorflow.org. See the decay intro on tensorflow.org
+# Lower decay value (recommend trying decay=0.9) 
+# if model experiences reasonably good training performance but poor validation and/or test performance.
 
 mnist = input_data.read_data_sets("MNIST_data", one_hot=True)
 x = tf.placeholder(dtype=tf.float32, shape=[None, 784])
