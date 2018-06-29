@@ -6,7 +6,7 @@ from PIL import Image
 
 # This is a data helper of processing cifar10.
 # You can use this module to load file and feed into CNN
-# the output is ndarray with 'NCHW' shape
+# the output image is ndarray with 'NCHW' shape, labels_shape is (batch, classes)
 def unpickle(file):
     with open(file, 'rb') as fo:
         data = cPickle.load(fo)
